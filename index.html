@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Task</title>
+    <link type="text/css" rel="stylesheet" href="task_list.css" />
+    <script type="text/javascript" src="task_list.js"></script>
+  </head>
+  <body>
+    <main>
+      <!--Application Interface-->
+      <h1>Random Task</h1>
+      <div id="tasks">
+        <!--Application Data Display-->
+        <h2><span id="name">&nbsp;</span>Task List</h2>
+        <textarea id="task_list" rows="12" cols="90"></textarea>
+      </div>
+    </main>
+    <!--User Controls Below -->
+    <aside>
+      <section>
+        <br />
+        <label for="task">Task</label>
+        <input type="text" name="task" id="task" /><br />
+        <!-- HTML Elements That upon clicking render various functionality on the page-->
+        <input
+          type="button"
+          name="add_task"
+          id="add_task"
+          value="Add Task"
+          class="button"
+        />
+        <input
+          type="button"
+          name="clear_tasks"
+          id="clear_tasks"
+          value="Clear Tasks"
+          class="button"
+        /><br />
+
+        <input
+          type="button"
+          name="delete_task"
+          id="delete_task"
+          value="Delete Task"
+          class="button"
+        />
+        <input
+          type="button"
+          name="toggle_sort"
+          id="toggle_sort"
+          value="Toggle Sort"
+          class="button"
+        /><br />
+
+        <input
+          type="button"
+          name="set_name"
+          id="set_name"
+          value="Set Name"
+          class="button"
+        />
+        <input
+          type="button"
+          name="filter_tasks"
+          id="filter_tasks"
+          value="Filter Tasks"
+          class="button"
+        /><br />
+      </section>
+    </aside>
+  </body>
+</html>
